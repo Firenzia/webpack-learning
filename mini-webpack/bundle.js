@@ -48,7 +48,8 @@ const makeDependenciesGraph = entry =>{
 // 返回字符串
 const generateCode = entry =>{
     const graph = JSON.stringify(makeDependenciesGraph(entry))
-    // 闭包
+    // 闭包 模块变量不污染 
+    // eval code 里面执行的require就是localRequire
     return `(function(graph){
 
         function require(module){
