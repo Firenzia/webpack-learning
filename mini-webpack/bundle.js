@@ -41,7 +41,6 @@ const makeDependenciesGraph = entry =>{
   graphArray.forEach(item => {
       graph[item.filepath] = {code:item.code, dependencies:item.dependencies}
   })
-  console.log(graph)
   return graph
 }
 
@@ -60,7 +59,6 @@ const generateCode = entry =>{
 
             var exports ={};
             (function(require,exports,code){
-              console.log('==================',code);
               eval(code);
             })(localRequire, exports,graph[module].code);
             return exports;
