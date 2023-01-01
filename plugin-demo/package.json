@@ -13,6 +13,6 @@
   "author": "si",
   "license": "ISC",
   "dependencies": {
-    "webpack": "^4.35.0"
+    "webpack": "^5.75.0"
   }
 }
