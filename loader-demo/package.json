@@ -13,6 +13,6 @@
   "author": "si",
   "license": "ISC",
   "dependencies": {
-    "loader-utils": "^1.2.3"
+    "loader-utils": "^3.2.1"
   }
 }
